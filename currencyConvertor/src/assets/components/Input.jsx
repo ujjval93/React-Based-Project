@@ -76,7 +76,7 @@ const Input = () => {
               type="number"
               value={converted}
               readOnly
-              className="outline-none text-lg w-25"
+              className="outline-none text-lg w-25 p-1 mt-2 bg-blue-400 rounded-md"
             />
           </div>
 
@@ -86,7 +86,7 @@ const Input = () => {
             <select
               value={to}
               onChange={(e) => setTo(e.target.value)}
-              className="bg-gray-200 p-1 rounded-md outline-none"
+              className="bg-gray-200 p-1 rounded-md outline-none mt-2"
             >
               {Object.keys(currencies).length > 0 ? (
                 Object.keys(currencies).map((cur) => (
